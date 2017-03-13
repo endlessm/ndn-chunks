@@ -198,7 +198,6 @@ def build(bld):
     bld.install_files("%s/ndn-chunks" % bld.env['INCLUDEDIR'],
                       bld.path.find_resource('src/version.hpp'))
 
-    bld.install_files("${SYSCONFDIR}/ndn", "client.conf.sample")
 
 def version(ctx):
     if getattr(Context.g_module, 'VERSION_BASE', None):
